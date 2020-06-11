@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'Titillium';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Titillium'), local('Titillium-Regular'),
+        url(../fonts/titillium.woff) format('woff'),
+        url(../fonts/titillium.ttf) format('truetype');
+}	
+	
+body {
+	font-family: 'Titillium', arial;
+	font-size: 16px;
+	text-shadow: 1px 1px 1px #aaa;
+	overflow-x: hidden !important;
+	overflow-y: visible !important;  
+	margin: 0 auto !important;	
+}
+
+a { text-decoration:none !important; transition: all ease 0.25s; }
+img { max-width: 100%; }
+li { list-style-type:none; }
+
+/*********************************************************
+**************** MOBILE (first) **************************
+*********************************************************/
+/***************** BLACK TOP MENU ****************/
+.navbar-wrapper {
+    background: #222;
+    z-index: 16;
+    position: fixed;
+    transform: translateZ(0);
+    width: 100%;
+    top: 0;
+}
+.navbar { width:1022px; margin:0 auto; display:-ms-flexbox; display:flex }
+.navbar ul { list-style-type:none; padding: 0; margin: 0 auto; }
+.navbar li { display:inline-block; padding: 10px 40px;  }
+.navbar li a { color:#fff; font-size:18px; }
+.navbar li a:hover { color:#6c6; transition: all ease 0.5s; }
+
+
+/*********************************************************
+**************** SCREEN (992px ) **************************
+*********************************************************/
+
+@media (min-width: 992px) {  
+
+
+/************* FIRST RIGHT MENU ****************  #eeb058 */
+#right-menu {
+	margin-top:-20px;
+	margin-right:15px;
+	float:right;
+	height:60px;
+}
+#right-menu ul { padding:0; margin:0; }
+#right-menu ul li { 
+	display:inline-block;
+	width:19.5%;
+}
+#right-menu ul li a:hover { color:#41cd52; }
+#right-menu ul li a {
+	display:block;
+	width:100%;
+	color:#8f9198;
+	text-align:center;	
+}
+#right-menu ul li span:before {
+	border-style: solid;
+	border-width: 0.15em 0.15em 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.45em;
+	left: 0.15em;
+	position: relative;
+	top: 0.35em;
+	transform: rotate(-45deg);
+	vertical-align: top;
+	width: 0.45em;
+	transform: rotate(135deg);
+}
+#right-menu ul ul {
+  display: none;
+  position: absolute;
+  list-style: none;
+  background:#fff;
+  margin-left:12px;
+  padding: 10px;
+  overflow: hidden;
+  z-index: 100;
+}
+#right-menu ul li:hover > ul {
+  display: block;
+  border: solid 1px #ccc;
+  border-top: 0;
+  box-shadow:  0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+}
+#right-menu ul li:hover > ul li {
+	display:block;
+	float:none;	
+}
+#right-menu ul li:hover > ul li a {
+	display:block;
+	width:100%;
+	height:100%;
+	padding:7px 10px;
+}
+
+#register-butt,  #cabinet { border-left:3px solid #fff; }
+#register-butt, #login-butt, #exit-butt, #cabinet {
+	padding:5px;
+	background: #41cd52;
+	background: linear-gradient(-45deg, transparent 5px, #41cd52 0) right, linear-gradient(135deg, transparent 5px, #41cd52 0) left; 
+	/* background: linear-gradient(-45deg, transparent 10px, #eeb058 0) right, linear-gradient(135deg, transparent 10px, #eeb058 0) left; */
+	background-size: 51% 100%;
+	background-repeat: no-repeat;
+}
+#register-butt a, #login-butt a, #exit-butt a, #cabinet a { color:#fff !important; }
+#register-butt a:hover, #login-butt a:hover, #exit-butt a:hover, #cabinet a:hover { color:green !important; } 
+
+/***************** BLACK TOP MENU ****************/
+.navbar-wrapper {
+    background: #222;
+    z-index: 16;
+    position: fixed;
+    transform: translateZ(0);
+    width: 100%;
+    top: 0;
+}
+.navbar { width:1022px; margin:0 auto; display:-ms-flexbox; display:flex }
+.navbar ul { list-style-type:none; padding: 0; margin: 0 auto; }
+.navbar li { display:inline-block; padding: 10px 40px;  }
+.navbar li a { color:#fff; font-size:18px; }
+.navbar li a:hover { color:#6c6; transition: all ease 0.5s; }
+
+/********* TOP PANEL - LOGO AND PICTURES *********/
+#top-panel-wrapper { 
+	height:100px;
+	padding-top:15px;
+	margin-top:70px;
+}
+#logo {
+	height: 50px;
+	margin-top: 30px;
+	padding: 10px 20px;
+	background: #41cd52;
+	background: linear-gradient(-45deg, transparent 10px, #41cd52 0) right, linear-gradient(135deg, transparent 10px, #41cd52 0) left;
+	/*background: linear-gradient(-45deg, transparent 10px, #eeb058 0) right, linear-gradient(135deg, transparent 10px, #eeb058 0) left; */
+	background-size: 51% 100%;
+	background-repeat: no-repeat; 
+}	
+#logo a { 
+	display:block;
+	width:100%;
+	height:100%;
+	cursor:pointer;
+	color:#fff;
+	text-align:center;
+	font-size:22px;
+	line-height:24px;	
+}
+#logo:hover { box-shadow: 12px -10px 20px -8px rgba(65,205,82,.8), -12px 10px 20px -8px rgba(65,205,82,.8);   } 
+#logo a:hover { color:green; }
+	
+	
+/* #login-butt, #register-butt, #logo { background-color:#eeb058 !important;} */
+
+main { margin-top:80px; }
+
+} /* @media (min-width: 992px) 

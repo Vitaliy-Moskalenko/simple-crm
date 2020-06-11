@@ -1,0 +1,65 @@
+/* Modules.css */
+
+/************** DEFAULT MODULE AND MAIN PAGE ***************************/
+.top-front-left { height:300px; padding-left:0; }
+.top-front-left h1{
+	font-size:46px;
+	line-height:48px;
+}
+.front-button-serv, .front-button-tech {
+	width:150px;
+	float:left;
+	padding: 10px 20px;
+	background: #41cd52;
+	background: linear-gradient(-45deg, transparent 10px, #41cd52 0) right, linear-gradient(135deg, transparent 10px, #41cd52 0) left;
+	/* background: linear-gradient(-45deg, transparent 10px, #eeb058 0) right, linear-gradient(135deg, transparent 10px, #eeb058 0) left;	*/
+	background-size: 51% 100%;
+	background-repeat: no-repeat; 
+}
+.front-button-tech { margin-left:10px; }
+.front-button-serv a, .front-button-tech a {
+	display:block;
+	text-align:center;
+	width:100%;
+	height:100%;
+	color:#fff;
+}
+.front-button-serv:hover, .front-button-tech:hover { box-shadow: 12px -10px 20px -8px rgba(65,205,82,.8), -12px 10px 20px -8px rgba(65,205,82,.8);   } 
+
+.top-front-right {
+	position:absolute;
+	right:-80px;
+	margin-top:-10px;
+	width:900px;
+	height:300px;
+	transform: rotate(-6deg);
+	overflow:hidden;
+
+}
+.top-front-right img, .top-front-bottom img {
+	display:block;
+	float:left;
+	margin-right:10px;
+	box-shadow:2px 2px 2px #000;
+}
+.top-front-bottom {
+	position:absolute;
+	margin-top:40px;
+	width:120%;
+	height:300px;
+	transform: rotate(-6deg);
+	overflow:hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
