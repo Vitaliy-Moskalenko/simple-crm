@@ -10,9 +10,9 @@ define('SKIN', 'modern');
 
 // Database
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'egoadmin_test');
-define('DB_USR', 'egoadmin_test');
-define('DB_PWD', 'test-db');
+define('DB_NAME', 'toreks_crm');
+define('DB_USR', 'admin');
+define('DB_PWD', 'password');
 
 
 function debug($str) {
